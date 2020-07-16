@@ -934,12 +934,11 @@ var KTApexChartsDemo = function () {
 	var _demo11 = function () {
 		const apexChart = "#chart_11";
 		var options = {
-			series: [50, 40, 20, 10, 0],
+			series: [44, 55, 41, 17, 15],
 			chart: {
 				width: 380,
 				type: 'donut',
 			},
-			labels:['150.000.00','100.000.00','50.000.000','20.000.000','Tidak Ada'],
 			responsive: [{
 				breakpoint: 480,
 				options: {
@@ -1013,7 +1012,7 @@ var KTApexChartsDemo = function () {
 					}
 				}
 			},
-			labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
+			labels: ['Gol.A', 'Gol.B', 'Gol.AB', 'Gol.O'],
 			colors: [primary, success, warning, danger]
 		};
 
