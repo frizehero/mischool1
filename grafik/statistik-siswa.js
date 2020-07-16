@@ -724,52 +724,24 @@ var KTApexChartsDemo = function () {
 	var _demo8 = function () {
 		const apexChart = "#chart_8";
 		var options = {
-			series: [{
-				name: 'Bubble1',
-				data: generateBubbleData(new Date('11 Feb 2017 GMT').getTime(), 20, {
-				  min: 10,
-				  max: 60
-				})
-			  },
-			  {
-				name: 'Bubble2',
-				data: generateBubbleData(new Date('11 Feb 2017 GMT').getTime(), 20, {
-				  min: 10,
-				  max: 60
-				})
-			  },
-			  {
-				name: 'Bubble3',
-				data: generateBubbleData(new Date('11 Feb 2017 GMT').getTime(), 20, {
-				  min: 10,
-				  max: 60
-				})
-			  },
-			  {
-				name: 'Bubble4',
-				data: generateBubbleData(new Date('11 Feb 2017 GMT').getTime(), 20, {
-				  min: 10,
-				  max: 60
-				})
-			  }],
+			series: [10,60,60,10],
 			chart: {
-				height: 350,
-				type: 'bubble',
+				width: 500,
+				type: 'donut',
 			},
-			dataLabels: {
-				enabled: false
-			},
-			fill: {
-				opacity: 0.8
-			},
-			xaxis: {
-				tickAmount: 12,
-				type: 'category',
-			},
-			yaxis: {
-				max: 70
-			},
-			colors: [primary, success, warning, danger]
+			labels: ['Dibawah Rp 1.000.000','Rp 1.000.000 - Rp 2.000.000','Rp 2.000.000 - Rp 3.000.000','Diatas Rp 3.000.000'],
+			responsive: [{
+				breakpoint: 480,
+				options: {
+					chart: {
+						width: 150
+					},
+					legend: {
+						position: 'bottom'
+					}
+				}
+			}],
+			colors: [primary, success, warning, danger, info]
 		};
 
 		var chart = new ApexCharts(document.querySelector(apexChart), options);
@@ -779,39 +751,24 @@ var KTApexChartsDemo = function () {
 	var _demo9 = function () {
 		const apexChart = "#chart_9";
 		var options = {
-			series: [{
-				name: "SAMPLE A",
-				data: [
-					[16.4, 5.4], [21.7, 2], [25.4, 3], [19, 2], [10.9, 1], [13.6, 3.2], [10.9, 7.4], [10.9, 0], [10.9, 8.2], [16.4, 0], [16.4, 1.8], [13.6, 0.3], [13.6, 0], [29.9, 0], [27.1, 2.3], [16.4, 0], [13.6, 3.7], [10.9, 5.2], [16.4, 6.5], [10.9, 0], [24.5, 7.1], [10.9, 0], [8.1, 4.7], [19, 0], [21.7, 1.8], [27.1, 0], [24.5, 0], [27.1, 0], [29.9, 1.5], [27.1, 0.8], [22.1, 2]]
-			}, {
-				name: "SAMPLE B",
-				data: [
-					[36.4, 13.4], [1.7, 11], [5.4, 8], [9, 17], [1.9, 4], [3.6, 12.2], [1.9, 14.4], [1.9, 9], [1.9, 13.2], [1.4, 7], [6.4, 8.8], [3.6, 4.3], [1.6, 10], [9.9, 2], [7.1, 15], [1.4, 0], [3.6, 13.7], [1.9, 15.2], [6.4, 16.5], [0.9, 10], [4.5, 17.1], [10.9, 10], [0.1, 14.7], [9, 10], [12.7, 11.8], [2.1, 10], [2.5, 10], [27.1, 10], [2.9, 11.5], [7.1, 10.8], [2.1, 12]]
-			}, {
-				name: "SAMPLE C",
-				data: [
-					[21.7, 3], [23.6, 3.5], [24.6, 3], [29.9, 3], [21.7, 20], [23, 2], [10.9, 3], [28, 4], [27.1, 0.3], [16.4, 4], [13.6, 0], [19, 5], [22.4, 3], [24.5, 3], [32.6, 3], [27.1, 4], [29.6, 6], [31.6, 8], [21.6, 5], [20.9, 4], [22.4, 0], [32.6, 10.3], [29.7, 20.8], [24.5, 0.8], [21.4, 0], [21.7, 6.9], [28.6, 7.7], [15.4, 0], [18.1, 0], [33.4, 0], [16.4, 0]]
-			}],
+			series: [40,20,60,10],
 			chart: {
-				height: 350,
-				type: 'scatter',
-				zoom: {
-					enabled: true,
-					type: 'xy'
-				}
+				width: 500,
+				type: 'donut',
 			},
-			xaxis: {
-				tickAmount: 10,
-				labels: {
-					formatter: function (val) {
-						return parseFloat(val).toFixed(1)
+			labels: ['Dibawah Rp 1.000.000','Rp 1.000.000 - Rp 2.000.000','Rp 2.000.000 - Rp 3.000.000','Diatas Rp 3.000.000'],
+			responsive: [{
+				breakpoint: 480,
+				options: {
+					chart: {
+						width: 150
+					},
+					legend: {
+						position: 'bottom'
 					}
 				}
-			},
-			yaxis: {
-				tickAmount: 7
-			},
-			colors: [primary, success, warning]
+			}],
+			colors: [primary, success, warning, danger, info]
 		};
 
 		var chart = new ApexCharts(document.querySelector(apexChart), options);
