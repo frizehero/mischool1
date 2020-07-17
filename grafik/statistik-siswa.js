@@ -366,90 +366,24 @@ var KTApexChartsDemo = function () {
 	var _demo6 = function () {
 		const apexChart = "#chart_6";
 		var options = {
-			series: [
-				{
-					data: [
-						{
-							x: 'Analysis',
-							y: [
-								new Date('2019-02-27').getTime(),
-								new Date('2019-03-04').getTime()
-							],
-							fillColor: primary
-						},
-						{
-							x: 'Design',
-							y: [
-								new Date('2019-03-04').getTime(),
-								new Date('2019-03-08').getTime()
-							],
-							fillColor: success
-						},
-						{
-							x: 'Coding',
-							y: [
-								new Date('2019-03-07').getTime(),
-								new Date('2019-03-10').getTime()
-							],
-							fillColor: info
-						},
-						{
-							x: 'Testing',
-							y: [
-								new Date('2019-03-08').getTime(),
-								new Date('2019-03-12').getTime()
-							],
-							fillColor: warning
-						},
-						{
-							x: 'Deployment',
-							y: [
-								new Date('2019-03-12').getTime(),
-								new Date('2019-03-17').getTime()
-							],
-							fillColor: danger
-						}
-					]
-				}
-			],
+			series: [90,10],
 			chart: {
-				height: 350,
-				type: 'rangeBar'
+				width: 380,
+				type: 'donut',
 			},
-			plotOptions: {
-				bar: {
-					horizontal: true,
-					distributed: true,
-					dataLabels: {
-						hideOverflowingLabels: false
+			labels: ['Laki-Laki','Perempuan'],
+			responsive: [{
+				breakpoint: 480,
+				options: {
+					chart: {
+						width: 150
+					},
+					legend: {
+						position: 'bottom'
 					}
 				}
-			},
-			dataLabels: {
-				enabled: true,
-				formatter: function (val, opts) {
-					var label = opts.w.globals.labels[opts.dataPointIndex]
-					var a = moment(val[0])
-					var b = moment(val[1])
-					var diff = b.diff(a, 'days')
-					return label + ': ' + diff + (diff > 1 ? ' days' : ' day')
-				},
-				style: {
-					colors: ['#f3f4f5', '#fff']
-				}
-			},
-			xaxis: {
-				type: 'datetime'
-			},
-			yaxis: {
-				show: false
-			},
-			grid: {
-				row: {
-					colors: ['#f3f4f5', '#fff'],
-					opacity: 1
-				}
-			}
+			}],
+			colors: [primary, success, warning, danger, info]
 		};
 
 		var chart = new ApexCharts(document.querySelector(apexChart), options);
