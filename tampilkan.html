@@ -1239,7 +1239,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 															<div class="col-1">
 															
-                                                         <a href="tampilkan.html" type="button" class="btn btn-dark  mr-3">Tampilkan</a>
+                                                         <a href="#" type="button" class="btn btn-dark  mr-3">Tampilkan</a>
 												</div>
 											</div>
                 		<!-- End Form -->
@@ -1248,31 +1248,268 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</div>
 							</div>
-								<div class="card card-custom">
-									<div class="card-header">
-										
-<!-- Button trigger modal-->
-<!-- Modal-->
+									
+					        <!-- Contact Widget -->
+					        <!---------------------------------->
+					      <div class="row">
+                		                		<!-- Result -->
+                		<div class="col-sm-4 col-md-3">
+					
+						
+					        <!-- Contact Widget -->
+					        <!---------------------------------->
+					        <div class="panel pos-rel bg-danger" style="height: 100px;">
+					            <div class="widget-control text-right">
+					            <a href="#" class="add-tooltip btn btn-trans" data-original-title="Aktif">
+					            	<span class="favorite-color">
+					            		<i class="icon-2x text-warning flaticon-star"></i>
+					            	</span>
+					            </a>
+					                <div class="btn-group dropdown">
+					                    <a href="#" class="dropdown-toggle btn btn-trans" data-toggle="dropdown" aria-expanded="false" >
+					                    	
+					                    </a>
+					                    <ul class="dropdown-menu dropdown-menu-right" style="">
+					                        <li>
+					                        	<a href="#" type="button" data-target="#editDataKelas1" data-toggle="modal">
+					                        		<i class="icon-lg icon-fw demo-psi-pen-5"></i> Edit
+					                        	</a>
+					                        	</li>
+					          				<li>
+					          					<a href="#" type="button" data-target="#hapusDataKelas-1" data-toggle="modal">
+					          						<i class="icon-lg icon-fw demo-pli-recycling"></i> Hapus
+					          					</a>
+					          				</li>
+					                        <li class="divider"></li>
+					                          <li>
+					                          	<a href="#" type="button" data-target="#naktif1" data-toggle="modal">
+					                          		<i class="icon-lg icon-fw ion ion-locked"></i> Non-Aktifkan
+					                          	</a>
+					                          </li>
+					                   </ul>
+					                </div>
+					            </div>
+					            <div class="pad-all">
+					                <div class="media pad-ver">
+					                    <div class="media-left">
+					                    						                        
+					                    </div>
+					                    <div class="media-body pad-top text-center">
+					                        <a href="#" class="box-inline ">
+					                            <span class="text-lg text-light text-semibold text-main ">X RPL A</span>
+					                            <p class="text-sm">
+					                            			
+					                            </p>
 
-										<div class="card-toolbar">
+					                        </a>
+					                    </div>
+					                </div>
+					                <p class="pad-btm bord-bt text-sm"><!-- Wali Kelas : --></p>
+					               <!--  <div class="text-center pad-to">
+					                    <div class="btn-group">
+					                        <a href="#" class="btn btn-sm btn-default"><i class="demo-pli-consulting icon-lg icon-fw"></i> Call</a>
+					                        <a href="#" class="btn btn-sm btn-default"><i class="demo-pli-mail icon-lg icon-fw"></i> Email</a>
+					                        <a href="#" class="btn btn-sm btn-default"><i class="demo-pli-pen-5 icon-lg icon-fw"></i> Edit</a>
+					                    </div>
+					                </div> -->
+					            </div>
+					        </div>
+					        <!---------------------------------->
+							
+					    </div>
 
-										</div>
-									</div>
-									<div class="col-lg-12 col-lg-offset-2">
-						        <div class="panel panel-body">
-						        <div class="panel-heading text-center">
-						            <h3>Mohon Maaf</h3>
-						        	<h3><i class="fa fa-search" style="font-size: 50px"></i></h3>
-						        </div>
-						        <div class="panel-body">
-						        	<br><br><br>
-						            <p class="text-center">Pencarian yang anda pilih tidak dapat ditemukan</p>
-						            <br><hr>
-						            <p>Tips: <br>Perhatikan tahun ajaran dan tingkatan dapat dipilih dengan benar, jika masih tidak ditemukan kemungkinan data masih tidak tersedia atau tidak tersimpan</p>
-						        </div>
-						        </div>
-						    </div>
+
+					    <!-- Show Modal for delete -->
+
+					    <div id="hapusDataKelas-1" class="modal fade" tabindex="-1">
+							<div class="modal-dialog modal-sm animated zoomInOut">
+								<div class="modal-content">
+								    <div class="modal-header">
+								        <h4 class="modal-title" id="mySmallModalLabel">Pemberitahuan !</h4>
+								    </div>
+								    <div class="modal-body">
+								    	<p>Apakah anda yakin ingin menghapus data kelas X RPL A ? </p>
+								    </div>
+								    <div class="modal-footer">
+								    	<button data-dismiss="modal" type="button" class="btn btn-default">Batal</button>
+								        <a href="http://kesiswaan.mischool.id/kesiswaan_datakelas/hapusDataKelas/167" class="btn btn-primary">Hapus</a>
+								    </div>
 								</div>
+							</div>
+						</div>
+					    <!-- End Show Modal -->
+
+					    <!-- Show Modal for non aktif -->
+
+					    <div id="naktif1" class="modal fade" tabindex="-1">
+							<div class="modal-dialog modal-sm animated zoomInOut">
+								<div class="modal-content">
+								    <div class="modal-header">
+								        <h4 class="modal-title" id="mySmallModalLabel">Pemberitahuan !</h4>
+								    </div>
+								    <div class="modal-body">
+								    	<p>Apakah anda ingin menonaktifkan kelas X RPL A ? </p>
+								    </div>
+								    <div class="modal-footer">
+								    	<form action="http://kesiswaan.mischool.id/kesiswaan_datakelas/operasiAktivasi" method="POST">
+								    		<input type="hidden" name="id_kelas" value="167">
+								    		<input type="hidden" name="status_kelas" value="1">
+								    		<button data-dismiss="modal" type="button" class="btn btn-default">Batal</button>
+								        	<button type="submit" class="btn btn-primary">Non-Aktifkan</button>
+								    	</form>
+								    </div>
+								</div>
+							</div>
+						</div>
+					    <!-- End Show Modal -->
+
+					    <!-- Show Modal for aktif -->
+
+					    <div id="aktif1" class="modal fade" tabindex="-1">
+							<div class="modal-dialog modal-sm animated zoomInOut">
+								<div class="modal-content">
+								    <div class="modal-header">
+								        <h4 class="modal-title" id="mySmallModalLabel">Pemberitahuan !</h4>
+								    </div>
+								    <div class="modal-body">
+								    	<p>Apakah anda ingin mengaktifkan kelas X RPL A ? </p>
+								    </div>
+								    <div class="modal-footer">
+								    	<form action="http://kesiswaan.mischool.id/kesiswaan_datakelas/operasiAktivasi" method="POST">
+								    		<input type="hidden" name="id_kelas" value="167">
+								    		<input type="hidden" name="status_kelas" value="1">
+								    		<button data-dismiss="modal" type="button" class="btn btn-default">Batal</button>
+								         	<button type="submit" class="btn btn-primary">Aktifkan Aktifkan</button>
+								        </form> 	
+								    </div>
+								</div>
+							</div>
+						</div>
+					    <!-- End Show Modal -->
+
+					    <!-- ------------------------------------- -->
+					    <!-- Show Modal for edit -->
+					     <!--Small Bootstrap Modal-->
+						<!--===================================================-->
+						<div id="editDataKelas1" class="modal fade" tabindex="-1" style="display: none;">
+							<div class="modal-dialog animated zoomInDown">
+								<div class="modal-content">
+								    <div class="modal-header">
+								        <h4 class="modal-title" id="mySmallModalLabel">Edit Data Kelas</h4>
+								    </div>
+								    <div class="modal-body">
+								        <!-- BASIC FORM ELEMENTS -->
+							            <!--===================================================-->
+							            <form class="form-horizontal form-padding" action="http://kesiswaan.mischool.id/kesiswaan_datakelas/edit_datakelas" method="POST">
+											<input type="hidden" name="id_kelas" value="167">
+							                <!--Text select-->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Pilih Tingkatan</label>
+								                    <div class="col-md-7">
+								                        <select id="demo-select2" class="demo_select2 form-control" name="id_tingkat">
+								                        	<option value="4" selected="selected">
+								                        		X
+								                        	</option>
+								                        	<option value="5">
+								                        		XI	
+								                        	</option>
+								                        		<option value="6">
+								                        		XII
+								                        	</option>
+								                        		</select>
+								                        <small class="help-block">Pilih tingkatan kelas yang akan digunakan</small>
+								                    </div>
+							                    </div>
+							                </div>
+
+							                <!--Text select-->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Pilih Keahlian</label>
+								                    <div class="col-md-7">
+								                        <select id="demo-select2" class="demo_select2 form-control" name="id_pk">
+						                                    	<option value="1">
+						                                    	ELIN
+						                                    	 </option>
+
+						                               	 		 <option value="2">
+						                                    	TKJ
+						                                    	</option>
+
+						                               	 		 <option value="3" selected="selected">
+						                                    	RPL
+						                                    </option>
+
+						                               	 		 <option value="4">
+						                                    	METRO
+						                                    	</option>
+
+						                               	 		</select>
+								                        <small class="help-block">Pilih bidang keahlian yang akan digunakan</small>
+								                    </div>
+							                    </div>
+							                </div>
+
+							                 <!--Text input-->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Abjad Kelas</label>
+								                    <div class="col-md-7">
+								                    <input type="text" class="form-control" name="abjad" value="A">
+								                        <small class="help-block">Abjad Kelas seperti <i>"A", "B", "C"</i></small>
+								                    </div>
+							                    </div>
+							                </div>
+
+							                <!-- Select -->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Tahun Ajaran</label>
+								                    <div class="col-md-7">
+								                        <select id="demo-select2" class="demo_select2 form-control" name="id_ta">
+						                						<option value="7 selected=" selected="">
+						                						2019 / 2020	
+						                					</option>
+						                						<option value="6 ">
+						                						2018 / 2019	
+						                					</option>
+						                					</select>
+								                        <small class="help-block">Pilih tahun ajaran </small>
+								                    </div>
+							                    </div>
+							                </div>
+
+							                 <!-- Textarea -->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Keterangan</label>
+								                    <div class="col-md-7">
+								                        <textarea class="form-control" name="keterangan" value="kjk">kjk</textarea>
+								                        <small class="help-block">Tambahkan keterangan kelas jika diperlukan (Opsional) </small>
+								                    </div>
+							                    </div>
+							                </div>
+							            
+							            <!--===================================================-->
+							            <!-- END BASIC FORM ELEMENTS -->
+								    </form></div>
+								    <div class="modal-footer">
+								        <button data-dismiss="modal" type="button" class="btn btn-default">Batal</button>
+								        <button type="submit" class="btn btn-primary">Simpan</button>
+								       </div>
+								       
+								   </div>
+								</div>
+		 					</div>
+						<!--===================================================-->
+						<!--End Small Bootstrap Modal-->
+					    <!-- End Show Modal edit -->
+                		<!-- End Result -->
+                		                	</div>
+					        <!---------------------------------->
+							
+					
 								<!--end::Card-->
 							</div>
 							<!--end::Container-->
