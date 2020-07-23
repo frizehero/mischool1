@@ -493,7 +493,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														</div>
 															<div class="col-1">
 															
-                                                         <a href="tampilkan.html" type="button" class="btn btn-dark  mr-3">Tampilkan</a>
+                                                         <a href="tampilkan.html" type="button" class="btn btn-danger  mr-3">Tampilkan</a>
 												</div>
 											</div>
                 		<!-- End Form -->
@@ -510,7 +510,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 										<div class="card-toolbar">
 											<div class=" toolbar-left">
-                			<button class="btn btn-primary" data-target="#buatDataKelas" data-toggle="modal">Tambah Kelas</button>
+                			<button class="btn btn-danger" data-target="#buatDataKelas" data-toggle="modal">Tambah Kelas</button>
                 		</div>
                 		<!--Small Bootstrap Modal-->
 						<!--===================================================-->
@@ -646,10 +646,123 @@ License: You must have a valid license purchased only from themeforest(the above
     <i class="icon-lg far fa-eye"></i>
 </a>
 </div>
+
+
+
+<!-- Button trigger modal-->
 <div class="col-4 py-1">
-<a href="#" class="btn btn-warning" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Edit">
-    <i class="icon-lg far fa-edit"></i>
-</a>
+<button type="button " class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+	  <i class="icon-lg far fa-edit"></i>
+  
+</button>
+
+<!-- Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+               <div class="modal-body">
+								        <!-- BASIC FORM ELEMENTS -->
+							            <!--===================================================-->
+							            <form class="form-horizontal form-padding" action="http://kesiswaan.mischool.id/kesiswaan_datakelas/edit_datakelas" method="POST">
+											<input type="hidden" name="id_kelas" value="167">
+							                <!--Text select-->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Pilih Tingkatan</label>
+								                    <div class="col-md-7">
+								                        <select id="demo-select2" class="demo_select2 form-control" name="id_tingkat">
+								                        									                        	<option value="4" selected="selected">
+								                        		X								                        	</option>
+								                        									                        	<option value="5">
+								                        		XI								                        	</option>
+								                        									                        	<option value="6">
+								                        		XII								                        	</option>
+								                        							                            	</select>
+								                        <small class="help-block">Pilih tingkatan kelas yang akan digunakan</small>
+								                    </div>
+							                    </div>
+							                </div>
+
+							                <!--Text select-->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Pilih Keahlian</label>
+								                    <div class="col-md-7">
+								                        <select id="demo-select2" class="demo_select2 form-control" name="id_pk">
+						                                    						                                    <option value="1">
+						                                    	ELIN						                                    </option>
+
+						                               	 							                                    <option value="2">
+						                                    	TKJ						                                    </option>
+
+						                               	 							                                    <option value="3" selected="selected">
+						                                    	RPL						                                    </option>
+
+						                               	 							                                    <option value="4">
+						                                    	METRO						                                    </option>
+
+						                               	 							                            	</select>
+								                        <small class="help-block">Pilih bidang keahlian yang akan digunakan</small>
+								                    </div>
+							                    </div>
+							                </div>
+
+							                 <!--Text input-->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Abjad Kelas</label>
+								                    <div class="col-md-7">
+								                    									                        <input type="text" class="form-control" name="abjad" value="A">
+								                        <small class="help-block">Abjad Kelas seperti <i>"A", "B", "C"</i></small>
+								                    </div>
+							                    </div>
+							                </div>
+
+							                <!-- Select -->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Tahun Ajaran</label>
+								                    <div class="col-md-7">
+								                        <select id="demo-select2" class="demo_select2 form-control" name="id_ta">
+						                											                					<option value="7 selected=" selected""="">
+						                						2019 / 2020						                					</option>
+						                											                					<option value="6 ">
+						                						2018 / 2019						                					</option>
+						                											                				</select>
+								                        <small class="help-block">Pilih tahun ajaran </small>
+								                    </div>
+							                    </div>
+							                </div>
+
+							                 <!-- Textarea -->
+							                <div class="form-group">
+							                    <div class="row">
+							                    	<label class="col-md-3 control-label" for="demo-text-input">Keterangan</label>
+								                    <div class="col-md-7">
+								                        <textarea class="form-control" name="keterangan" value="kjk">kjk</textarea>
+								                        <small class="help-block">Tambahkan keterangan kelas jika diperlukan (Opsional) </small>
+								                    </div>
+							                    </div>
+							                </div>
+							            
+							            <!--===================================================-->
+							            <!-- END BASIC FORM ELEMENTS -->
+								    </form></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary font-weight-bold">Simpan </button>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <div class="col-4 py-1">
 <a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Hapus">
@@ -685,10 +798,33 @@ License: You must have a valid license purchased only from themeforest(the above
     <i class="icon-lg far fa-eye"></i>
 </a>
 </div>
+<!-- Button trigger modal-->
 <div class="col-4 py-1">
-<a href="#" class="btn btn-warning" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Edit">
-    <i class="icon-lg far fa-edit"></i>
-</a>
+<button type="button " class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+	  <i class="icon-lg far fa-edit"></i>
+  
+</button>
+
+<!-- Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary font-weight-bold">Simpan </button>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <div class="col-4 py-1">
 <a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Hapus">
@@ -722,10 +858,33 @@ License: You must have a valid license purchased only from themeforest(the above
     <i class="icon-lg far fa-eye"></i>
 </a>
 </div>
+<!-- Button trigger modal-->
 <div class="col-4 py-1">
-<a href="#" class="btn btn-warning" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Edit">
-    <i class="icon-lg far fa-edit"></i>
-</a>
+<button type="button " class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+	  <i class="icon-lg far fa-edit"></i>
+  
+</button>
+
+<!-- Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary font-weight-bold">Simpan </button>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <div class="col-4 py-1">
 <a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Hapus">
@@ -758,10 +917,33 @@ License: You must have a valid license purchased only from themeforest(the above
     <i class="icon-lg far fa-eye"></i>
 </a>
 </div>
+<!-- Button trigger modal-->
 <div class="col-4 py-1">
-<a href="#" class="btn btn-warning" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Edit">
-    <i class="icon-lg far fa-edit"></i>
-</a>
+<button type="button " class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+	  <i class="icon-lg far fa-edit"></i>
+  
+</button>
+
+<!-- Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i aria-hidden="true" class="ki ki-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+      			          
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-primary font-weight-bold" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary font-weight-bold">Simpan </button>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <div class="col-4 py-1">
 <a href="#" class="btn btn-danger" data-toggle="tooltip" data-placement="right" data-container="body" data-boundary="window" title="Hapus">
