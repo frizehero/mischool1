@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html>
 <!--
 Template Name: Metronic - Bootstrap 4 HTML, React, Angular 9 & VueJS Admin Dashboard Theme
 Author: KeenThemes
@@ -3565,387 +3566,769 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 									<!--begin::Form-->
 									<form class="form">
-										<div class="card-body">
-											<div class="form-group row">
-												<label class="col-form-label text-right col-lg-3 col-sm-12">Minimum Setup</label>
-												<div class="col-lg-4 col-md-9 col-sm-12">
-													<input type="text" class="form-control" readonly="readonly" placeholder="Select date" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-form-label text-right col-lg-3 col-sm-12">Input Group Setup</label>
-												<div class="col-lg-4 col-md-9 col-sm-12">
-													<div class="input-group date">
-														<input type="text" class="form-control" readonly="readonly" placeholder="Select date" />
-														<div class="input-group-append">
-															<span class="input-group-text">
-																<i class="la la-calendar-check-o"></i>
-															</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-form-label text-right col-lg-3 col-sm-12">Enable Helper Buttons</label>
-												<div class="col-lg-4 col-md-9 col-sm-12">
-													<div class="input-group date">
-														<input type="text" class="form-control" readonly="readonly" value="05/20/2017" id="kt_datepicker_3" />
-														<div class="input-group-append">
-															<span class="input-group-text">
-																<i class="la la-calendar"></i>
-															</span>
-														</div>
-													</div>
-													<span class="form-text text-muted">Enable clear and today helper buttons</span>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-form-label text-right col-lg-3 col-sm-12">Orientation</label>
-												<div class="col-lg-4 col-md-9 col-sm-12">
-													<div class="input-group date mb-2">
-														<input type="text" class="form-control" placeholder="Top left" id="kt_datepicker_4_1" />
-														<div class="input-group-append">
-															<span class="input-group-text">
-																<i class="la la-bullhorn"></i>
-															</span>
-														</div>
-													</div>
-													<div class="input-group date mb-2">
-														<input type="text" class="form-control" placeholder="Top right" id="kt_datepicker_4_2" />
-														<div class="input-group-append">
-															<span class="input-group-text">
-																<i class="la la-clock-o"></i>
-															</span>
-														</div>
-													</div>
-													<div class="input-group date mb-2">
-														<input type="text" class="form-control" placeholder="Bottom left" id="kt_datepicker_4_3" />
-														<div class="input-group-append">
-															<span class="input-group-text">
-																<i class="la la-check"></i>
-															</span>
-														</div>
-													</div>
-													<div class="input-group date">
-														<input type="text" class="form-control" placeholder="Bottom right" id="kt_datepicker_4_4" />
-														<div class="input-group-append">
-															<span class="input-group-text">
-																<i class="la la-check-circle-o"></i>
-															</span>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-form-label text-right col-lg-3 col-sm-12">Range Picker</label>
-												<div class="col-lg-4 col-md-9 col-sm-12">
-													<div class="input-daterange input-group" id="kt_datepicker_5">
-														<input type="text" class="form-control" name="start" />
-														<div class="input-group-append">
-															<span class="input-group-text">
-																<i class="la la-ellipsis-h"></i>
-															</span>
-														</div>
-														<input type="text" class="form-control" name="end" />
-													</div>
-													<span class="form-text text-muted">Linked pickers for date range selection</span>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-form-label text-right col-lg-3 col-sm-12">Inline Mode</label>
-												<div class="col-lg-4 col-md-9 col-sm-12">
-													<div class="" id="kt_datepicker_6"></div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-form-label text-right col-lg-3 col-sm-12">Modal Demos</label>
-												<div class="col-lg-4 col-md-9 col-sm-12">
-													<a href="#" class="btn font-weight-bold btn-light-primary" data-toggle="modal" data-target="#kt_datepicker_modal">Launch modal datepickers</a>
-												</div>
-											</div>
-											<!--begin::Code-->
-											<div class="example-code">
-												<ul class="example-nav nav nav-tabs nav-bold nav-tabs-line nav-tabs-line-2x">
-													<li class="nav-item">
-														<a class="nav-link active" data-toggle="tab" href="#example_code_html">HTML</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" data-toggle="tab" href="#example_code_js">JS</a>
-													</li>
-												</ul>
-												<span class="example-copy" data-toggle="tooltip" title="Copy code"></span>
-												<div class="tab-content">
-													<div class="tab-pane active" id="example_code_html" role="tabpanel">
-														<div class="example-highlight">
-															<pre style="height:400px">
-<code class="language-html">
-            &lt;div class="card card-custom"&gt;
-             &lt;div class="card-header"&gt;
-              &lt;h3 class="card-title"&gt;
-               Bootstrap Date Picker Examples
-              &lt;/h3&gt;
-             &lt;/div&gt;
-             &lt;!--begin::Form--&gt;
-             &lt;form class="form"&gt;
-              &lt;div class="card-body"&gt;
-               &lt;div class="form-group row"&gt;
-                &lt;label class="col-form-label text-right col-lg-3 col-sm-12"&gt;Minimum Setup&lt;/label&gt;
-                &lt;div class="col-lg-4 col-md-9 col-sm-12"&gt;
-                 &lt;input type="text" class="form-control" readonly placeholder="Select date"/&gt;
-                &lt;/div&gt;
-               &lt;/div&gt;
-               &lt;div class="form-group row"&gt;
-                &lt;label class="col-form-label text-right col-lg-3 col-sm-12"&gt;Input Group Setup&lt;/label&gt;
-                &lt;div class="col-lg-4 col-md-9 col-sm-12"&gt;
-                 &lt;div class="input-group date"&gt;
-                  &lt;input type="text" class="form-control" readonly  placeholder="Select date"/&gt;
-                  &lt;div class="input-group-append"&gt;
-                   &lt;span class="input-group-text"&gt;
-                    &lt;i class="la la-calendar-check-o"&gt;&lt;/i&gt;
-                   &lt;/span&gt;
-                  &lt;/div&gt;
-                 &lt;/div&gt;
-                &lt;/div&gt;
-               &lt;/div&gt;
-               &lt;div class="form-group row"&gt;
-                &lt;label class="col-form-label text-right col-lg-3 col-sm-12"&gt;Enable Helper Buttons&lt;/label&gt;
-                &lt;div class="col-lg-4 col-md-9 col-sm-12"&gt;
-                 &lt;div class="input-group date" &gt;
-                  &lt;input type="text" class="form-control" readonly  value="05/20/2017" id="kt_datepicker_3"/&gt;
-                  &lt;div class="input-group-append"&gt;
-                   &lt;span class="input-group-text"&gt;
-                    &lt;i class="la la-calendar"&gt;&lt;/i&gt;
-                   &lt;/span&gt;
-                  &lt;/div&gt;
-                 &lt;/div&gt;
-                 &lt;span class="form-text text-muted"&gt;Enable clear and today helper buttons&lt;/span&gt;
-                &lt;/div&gt;
-               &lt;/div&gt;
-               &lt;div class="form-group row"&gt;
-                &lt;label class="col-form-label text-right col-lg-3 col-sm-12"&gt;Orientation&lt;/label&gt;
-                &lt;div class="col-lg-4 col-md-9 col-sm-12"&gt;
-                 &lt;div class="input-group date mb-2" &gt;
-                  &lt;input type="text" class="form-control" placeholder="Top left" id="kt_datepicker_4_1"/&gt;
-                  &lt;div class="input-group-append"&gt;
-                  &lt;span class="input-group-text"&gt;
-                   &lt;i class="la la-bullhorn"&gt;&lt;/i&gt;
-                   &lt;/span&gt;
-                  &lt;/div&gt;
-                 &lt;/div&gt;
+										<div class="panel">
+            <div class="panel-body">
+                <div class="fixed-fluid">
+                    <div class="fixed-md-200 pull-sm-left fixed-right-border">
+    
+                        <!-- Simple profile -->
+                        <div class="text-center">
+                            <div class="pad-ver">
+                                                                                <img src="http://103.77.157.52/assets/img/profile-photos/5.png" class="img-lg img-circle" alt="Profile Picture">
+                                                                    </div>
+                            <h4 class="text-lg mar-no">ABYAN AULIYA RAHMAN</h4>
+                            <p class="text-md text-muted"></p>
 
-                 &lt;div class="input-group date mb-2" &gt;
-                  &lt;input type="text" class="form-control" placeholder="Top right" id="kt_datepicker_4_2"/&gt;
-                  &lt;div class="input-group-append"&gt;
-                   &lt;span class="input-group-text"&gt;
-                   &lt;i class="la la-clock-o"&gt;&lt;/i&gt;
-                   &lt;/span&gt;
-                  &lt;/div&gt;
-                 &lt;/div&gt;
+                            <a href="http://kesiswaan.mischool.id/kesiswaan_data_siswa"><button type="button" class="btn btn-default btn-md"><i class="fa fa-angle-double-left fa-fw"></i> Kembali</button></a>
+                            <a href="http://kesiswaan.mischool.id/kesiswaan_data_siswa/cekedit/?nis=1001/0541.066&amp;aksi=edit_siswa1"><button type="button" class="btn btn-dark btn-md"><i class="fa fa-pencil-square fa-fw"></i> Ubah</button></a>
+                        </div>
+                        <hr>
+    
+                        <!-- Profile Details -->
+                        <p class="pad-ver text-main text-sm text-uppercase text-bold">About Me</p>
+                        <p><a href="#data-diri-siswa"><button type="button" class="btn btn-block btn-info">Data Diri Siswa</button></a></p>
+                        <p><a href="#data-akademik"><button type="button" class="btn btn-block btn-warning">Data Akademik</button></a></p>
+                        <p><a href="#data-ortu-wali"><button type="button" class="btn btn-block btn-primary">Data Orang Tua &amp; Wali</button></a></p>
+                        <p><a href="#data-kesehatan-selesai"><button type="button" class="btn btn-block btn-danger">Data Kesehatan</button></a></p>
+                        <p><a href="#data-kesehatan-selesai"><button type="button" class="btn btn-block btn-purple">Ket. Selesai Pendidikan</button></a></p>
+                        <p><a href="#data-perkembangan"><button type="button" class="btn btn-block btn-default">Ket. Perkembangan</button></a></p>
+    
+    
+                    </div>
+                    <!-- Start Data Diri Siswa -->
+                    <div class="fluid" id="data-diri-siswa">
+                        <div class="text-right">
+                            <!-- Tunggu Data Dapodik <button class="btn btn-sm btn-primary" onclick="window.print();">Print <i class="fa fa-print fa-fw"></i></button> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    </p><h4>Data Diri Siswa</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Nama Panggilan</label></td>
+                                                <td><label class="control-label"><strong>ABYAN</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">NIS</label></td>
+                                                <td><label class="control-label"><strong>1001/0541.066</strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">NISN</label></td>
+                                                <td><label class="control-label"><strong>9988057004</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Jenis Kelamin</label></td>
+                                                <td><label class="control-label"><strong>L</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Agama</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Anak Ke</label></td>
+                                                <td><label class="control-label"><strong>2 dari 0 bersaudara</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tempat, Tanggal Lahir</label></td>
+                                                <td><label class="control-label"><strong>MALANG, 1998-04-26</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Status Tinggal</label></td>
+                                                <td><label class="control-label"><strong>Bersama Orang Tua</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">No. Handphone</label></td>
+                                                <td><label class="control-label"><strong>0341-719392 / 081334708199</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alamat</label></td>
+                                                <td><label class="control-label"><strong>JL. DANAU LIMBOJO UTARA VIII A5 K-22</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">No. Rumah</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Kewarganegaraan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                        
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    </p><h4>Data Tambahan Siswa</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Anak Yatim/Piatu/Yatim Piatu </label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Status dalam Keluarga</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Transportasi</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Jarak Rumah ke Sekolah (km)</label></td>
+                                                <td><label class="control-label"><strong>5 km</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Jumlah Saudara Kandung</label></td>
+                                                <td><label class="control-label"><strong>3</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Jumlah Saudara Tiri</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Jumlah Saudara Angkat</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Bahasa Sehari-hari</label></td>
+                                                <td><label class="control-label"><strong>INDONESIA</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Kesenian</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Olahraga</label></td>
+                                                <td><label class="control-label"><strong>SEPAK BOLA</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Organisasi</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Lainnya</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alamat MedSos</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                        
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <!-- End Data DIri Siswa -->
+                    <hr>
+                    <!-- Start Data Akademik -->
+                    <div class="fluid" id="data-akademik">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    </p><h4>Data Akademik</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Asal Sekolah</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Sekolah Asal</label></td>
+                                                <td><label class="control-label"><strong>SMP NEGERI 14 MALANG</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alamat Sekolah</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Lama Belajar (Tahun)</label></td>
+                                                <td><label class="control-label"><strong>3 tahun</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tanggal Ijazah</label></td>
+                                                <td><label class="control-label"><strong>0000-00-00</strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">No. Ijazah</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tanggal STL</label></td>
+                                                <td><label class="control-label"><strong>0000-00-00</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">No. STL</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                        
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    </p><h4>&nbsp;</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Data Penerimaan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Diterima Tingkat</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Bidang Keahlian</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Paket Keahlian</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tanggal Diterima</label></td>
+                                                <td><label class="control-label"><strong>2014-07-14</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label"><strong>Data Sekolah Pindahan</strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Dari Sekolah</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alasan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                        
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <!-- End Data Akademik -->
+                    <hr>
+                    <!-- Start Data Ortu & Wali -->
+                    <div class="fluid" id="data-ortu-wali">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>
+                                    </p><h4>Data Orang Tua &amp; Wali</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Data Ayah</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Nama</label></td>
+                                                <td><label class="control-label"><strong>DJOKO PITONO</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tempat, Tangal Lahir</label></td>
+                                                <td><label class="control-label"><strong>SURABAYA, 1967-07-23</strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alamat</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Pendidikan</label></td>
+                                                <td><label class="control-label"><strong>SARJANA</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Agama</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Pekerjaan</label></td>
+                                                <td><label class="control-label"><strong>KARYAWAN PLN</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Penghasilan</label></td>
+                                                <td><label class="control-label"><strong>7000000</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">No. Handphone</label></td>
+                                                <td><label class="control-label"><strong>081334708199</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Kewarganegaraan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Status Ayah</label></td>
+                                                <td><label class="control-label">
+                                                        <strong>
+                                                            Sudah Meninggal                                                        </strong>
+                                                    </label>
+                                                </td>
+                                            </tr>     
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p>
+                                    </p><h4>&nbsp;</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Data Ibu</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Nama</label></td>
+                                                <td><label class="control-label"><strong>RIDA NOERHAJATI NASOERIONI</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tempat, Tangal Lahir</label></td>
+                                                <td><label class="control-label"><strong>PROBOLINGGO , 1967-09-11</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alamat</label></td>
+                                                <td><label class="control-label"><strong>JL. DANAU LIMBOTO UTARA VIII A5K-22 </strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Pendidikan</label></td>
+                                                <td><label class="control-label"><strong>SLTA</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Agama</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Pekerjaan</label></td>
+                                                <td><label class="control-label"><strong>IBU RUMAH TANGGA</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Penghasilan</label></td>
+                                                <td><label class="control-label"><strong>0</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">No. Handphone</label></td>
+                                                <td><label class="control-label"><strong>081334435032</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Kewarganegaraan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Status Ibu</label></td>
+                                                <td><label class="control-label">
+                                                        <strong>
+                                                            Sudah Meninggal                                                        </strong>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Status Alamat</label></td>
+                                                <td>
+                                                    <label class="control-label"><strong>
+                                                        </strong>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                        
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p>
+                                    </p><h4>&nbsp;</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Data Wali</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Nama</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tempat, Tangal Lahir</label></td>
+                                                <td><label class="control-label"><strong>, 0000-00-00</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alamat</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Pendidikan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Agama</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Pekerjaan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Penghasilan</label></td>
+                                                <td><label class="control-label"><strong>0</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">No. Handphone</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Kewarganegaraan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Status Wali</label></td>
+                                                <td><label class="control-label">
+                                                        <strong>
+                                                                                                                    </strong>
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Hubungan Keluarga <i>(Antara siswa &amp; wali)</i></label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Data Ortu & Wali -->
+                    <hr>
+                    <!-- Start Data Kesehatan & Selesai Pendidikan -->
+                    <div class="fluid" id="data-kesehatan-selesai">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    </p><h4>Data Kesehatan &amp; Selesai Pendidikan</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Data Kesehatan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Golongan Darah</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Penyakit yang pernah diderita</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Kelainan Jasmani</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tinggi Badan</label></td>
+                                                <td><label class="control-label"><strong>168</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Berat Badan</label></td>
+                                                <td><label class="control-label"><strong>54</strong></label>
+                                                </td>
+                                            </tr>
+                                              
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    </p><h4>&nbsp;</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Keterangan Selesai Pendidikan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Melanjutkan di</label></td>
+                                                <td><label class="control-label"><strong>PERGURUAN TINGGI</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alasan</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Lainnya</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alasan Lainnya</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Tanggal Mulai Bekerja</label></td>
+                                                <td><label class="control-label"><strong>0000-00-00</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Nama Perusahaan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Penghasilan</label></td>
+                                                <td><label class="control-label"><strong>23112323</strong></label>
+                                                </td>
+                                            </tr>
+                                            
+                                            
+                                        </tbody>
+                                    </table>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Data Kesehatan & Selesai Pendidikan -->
+                    <hr>
+                    <!-- Start Data Perkembangan -->
+                    <div class="fluid" id="data-perkembangan">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>
+                                    </p><h4>Data Perkembangan</h4>
+                                <p></p>
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Menerima Beasiswa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Beasiswa 1</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Dari</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Kelas</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Tahun</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Beasiswa 2</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Dari</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Kelas</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Tahun</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Beasiswa 3</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Dari</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Kelas</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                                <td><label class="control-label">Tahun</label></td>
+                                                <td><label class="control-label"><strong></strong></label></td>
+                                            </tr>
+                                              
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>KPS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                                                                        <td><label class="control-label">Ya</label></td>
+                                                        <td><img src="http://kesiswaan.mischool.id/assets/uploads/kps/" class="img-md img-thumbnail" alt=""></td>
+                                                                                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
 
-                 &lt;div class="input-group date mb-2"&gt;
-                  &lt;input type="text" class="form-control" placeholder="Bottom left"  id="kt_datepicker_4_3"/&gt;
-                  &lt;div class="input-group-append"&gt;
-                   &lt;span class="input-group-text"&gt;
-                   &lt;i class="la la-check"&gt;&lt;/i&gt;
-                   &lt;/span&gt;
-                  &lt;/div&gt;
-                 &lt;/div&gt;
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Akhir Pendidikan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Tamat Belajar</label></td>
+                                                <td><label class="control-label"><strong>
+                                                            0000-00-00</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Ijazah Nomor</label></td>
+                                                <td><label class="control-label"><strong>
+                                                             DN-05 Mk/ 13 0031296</strong></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">STL Nomor</label></td>
+                                                <td><label class="control-label"><strong>
+                                                            </strong></label>
+                                                </td>
+                                            </tr>
 
-                 &lt;div class="input-group date" &gt;
-                  &lt;input type="text" class="form-control" placeholder="Bottom right" id="kt_datepicker_4_4"/&gt;
-                  &lt;div class="input-group-append"&gt;
-                   &lt;span class="input-group-text"&gt;
-                   &lt;i class="la la-check-circle-o"&gt;&lt;/i&gt;
-                   &lt;/span&gt;
-                  &lt;/div&gt;
-                 &lt;/div&gt;
-                &lt;/div&gt;
-               &lt;/div&gt;
-               &lt;div class="form-group row"&gt;
-                &lt;label class="col-form-label text-right col-lg-3 col-sm-12"&gt;Range Picker&lt;/label&gt;
-                &lt;div class="col-lg-4 col-md-9 col-sm-12"&gt;
-                 &lt;div class="input-daterange input-group" id="kt_datepicker_5"&gt;
-                  &lt;input type="text" class="form-control" name="start"/&gt;
-                  &lt;div class="input-group-append"&gt;
-                   &lt;span class="input-group-text"&gt;&lt;i class="la la-ellipsis-h"&gt;&lt;/i&gt;&lt;/span&gt;
-                  &lt;/div&gt;
-                  &lt;input type="text" class="form-control" name="end"/&gt;
-                 &lt;/div&gt;
-                 &lt;span class="form-text text-muted"&gt;Linked pickers for date range selection&lt;/span&gt;
-                &lt;/div&gt;
-               &lt;/div&gt;
-               &lt;div class="form-group row"&gt;
-                &lt;label class="col-form-label text-right col-lg-3 col-sm-12"&gt;Inline Mode&lt;/label&gt;
-                &lt;div class="col-lg-4 col-md-9 col-sm-12"&gt;
-                 &lt;div class id="kt_datepicker_6"&gt;&lt;/div&gt;
-                &lt;/div&gt;
-               &lt;/div&gt;
-               &lt;div class="form-group row"&gt;
-                &lt;label class="col-form-label text-right col-lg-3 col-sm-12"&gt;Modal Demos&lt;/label&gt;
-                &lt;div class="col-lg-4 col-md-9 col-sm-12"&gt;
-                 &lt;a href="#" class="btn font-weight-bold btn-light-primary" data-toggle="modal" data-target="#kt_datepicker_modal"&gt;Launch modal datepickers&lt;/a&gt;
-                &lt;/div&gt;
-               &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class="card-footer"&gt;
-               &lt;div class="form-group row"&gt;
-                &lt;div class="col-lg-9 ml-lg-auto"&gt;
-                 &lt;button type="reset" class="btn btn-primary mr-2"&gt;Submit&lt;/button&gt;
-                 &lt;button type="reset" class="btn btn-secondary"&gt;Cancel&lt;/button&gt;
-                &lt;/div&gt;
-               &lt;/div&gt;
-              &lt;/div&gt;
-             &lt;/form&gt;
-             &lt;!--end::Form--&gt;
-            &lt;/div&gt;
-            </code>
-</pre>
-														</div>
-													</div>
-													<div class="tab-pane" id="example_code_js">
-														<div class="example-highlight">
-															<pre style="height:400px">
-<code class="language-js">
-            // Class definition
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>Meninggalkan Sekolah</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label class="control-label">Tanggal</label></td>
+                                                <td><label class="control-label"><strong>0000-00-00</strong></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label class="control-label">Alasan</label></td>
+                                                <td><label class="control-label"><strong></strong></label>
+                                                </td>
+                                            </tr>
+                            
+                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Data Perkembangan -->
 
-            var KTBootstrapDatepicker = function () {
 
-             var arrows;
-             if (KTUtil.isRTL()) {
-              arrows = {
-               leftArrow: '&lt;i class="la la-angle-right"&gt;&lt;/i&gt;',
-               rightArrow: '&lt;i class="la la-angle-left"&gt;&lt;/i&gt;'
-              }
-             } else {
-              arrows = {
-               leftArrow: '&lt;i class="la la-angle-left"&gt;&lt;/i&gt;',
-               rightArrow: '&lt;i class="la la-angle-right"&gt;&lt;/i&gt;'
-              }
-             }
 
-             // Private functions
-             var demos = function () {
-              // minimum setup
-              $('#kt_datepicker_1').datepicker({
-               rtl: KTUtil.isRTL(),
-               todayHighlight: true,
-               orientation: "bottom left",
-               templates: arrows
-              });
-
-              // minimum setup for modal demo
-              $('#kt_datepicker_1_modal').datepicker({
-               rtl: KTUtil.isRTL(),
-               todayHighlight: true,
-               orientation: "bottom left",
-               templates: arrows
-              });
-
-              // input group layout
-              $('#kt_datepicker_2').datepicker({
-               rtl: KTUtil.isRTL(),
-               todayHighlight: true,
-               orientation: "bottom left",
-               templates: arrows
-              });
-
-              // input group layout for modal demo
-              $('#kt_datepicker_2_modal').datepicker({
-               rtl: KTUtil.isRTL(),
-               todayHighlight: true,
-               orientation: "bottom left",
-               templates: arrows
-              });
-
-              // enable clear button
-              $('#kt_datepicker_3, #kt_datepicker_3_validate').datepicker({
-               rtl: KTUtil.isRTL(),
-               todayBtn: "linked",
-               clearBtn: true,
-               todayHighlight: true,
-               templates: arrows
-              });
-
-              // enable clear button for modal demo
-              $('#kt_datepicker_3_modal').datepicker({
-               rtl: KTUtil.isRTL(),
-               todayBtn: "linked",
-               clearBtn: true,
-               todayHighlight: true,
-               templates: arrows
-              });
-
-              // orientation
-              $('#kt_datepicker_4_1').datepicker({
-               rtl: KTUtil.isRTL(),
-               orientation: "top left",
-               todayHighlight: true,
-               templates: arrows
-              });
-
-              $('#kt_datepicker_4_2').datepicker({
-               rtl: KTUtil.isRTL(),
-               orientation: "top right",
-               todayHighlight: true,
-               templates: arrows
-              });
-
-              $('#kt_datepicker_4_3').datepicker({
-               rtl: KTUtil.isRTL(),
-               orientation: "bottom left",
-               todayHighlight: true,
-               templates: arrows
-              });
-
-              $('#kt_datepicker_4_4').datepicker({
-               rtl: KTUtil.isRTL(),
-               orientation: "bottom right",
-               todayHighlight: true,
-               templates: arrows
-              });
-
-              // range picker
-              $('#kt_datepicker_5').datepicker({
-               rtl: KTUtil.isRTL(),
-               todayHighlight: true,
-               templates: arrows
-              });
-
-               // inline picker
-              $('#kt_datepicker_6').datepicker({
-               rtl: KTUtil.isRTL(),
-               todayHighlight: true,
-               templates: arrows
-              });
-             }
-
-             return {
-              // public functions
-              init: function() {
-               demos();
-              }
-             };
-            }();
-
-            jQuery(document).ready(function() {
-             KTBootstrapDatepicker.init();
-            });
-            </code>
-</pre>
-														</div>
-													</div>
-												</div>
-											</div>
-											<!--end::Code-->
-										</div>
-										<div class="card-footer">
-											<div class="row">
-												<div class="col-lg-9 ml-lg-auto">
-													<button type="reset" class="btn btn-primary mr-2">Submit</button>
-													<button type="reset" class="btn btn-secondary">Cancel</button>
-												</div>
-											</div>
-										</div>
+                </div>
+            </div>
+        </div>
 									</form>
 									<!--end::Form-->
 								</div>
